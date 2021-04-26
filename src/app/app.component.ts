@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bootstraptest';
+  currentSection = 'home';
+
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+  }
+
 }

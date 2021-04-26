@@ -1,0 +1,33 @@
+   <!-- Navigation-->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" (window:scroll)="windowScroll()" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="" /></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ml-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+
+                <li class="nav-item" (click)="scrollTo('services')">
+                  <a class="nav-link js-scroll-trigger" [ngClass]="{'active':currentSection === 'services'}" href="javascript: void(0);">Services</a>
+                </li>
+                <li class="nav-item" (click)="scrollTo('portfolio')"  >
+                  <a class="nav-link js-scroll-trigger" [ngClass]="{'active':currentSection === 'portfolio'}" href="javascript: void(0);">Portfolio</a>
+                </li>
+                <li class="nav-item" (click)="scrollTo('about')" >
+                  <a class="nav-link js-scroll-trigger"  [ngClass]="{'active':currentSection === 'about'}" href="javascript: void(0);">About</a>
+                </li>
+                <li class="nav-item" (click)="scrollTo('team')" >
+                  <a class="nav-link js-scroll-trigger"  [ngClass]="{'active':currentSection === 'team'}" href="javascript: void(0);">Team</a>
+                </li>
+                <li class="nav-item" (click)="scrollTo('clients')" >
+                  <a class="nav-link js-scroll-trigger"  [ngClass]="{'active':currentSection === 'clients'}" href="javascript: void(0);">Clients</a>
+                </li>
+                <li class="nav-item" (click)="scrollTo('contact')"  >
+                  <a class="nav-link js-scroll-trigger" [ngClass]="{'active':currentSection === 'contact'}" href="javascript: void(0);">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
